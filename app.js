@@ -8,9 +8,11 @@ require("dotenv").config();
 
 mongoose.set('strictQuery', true);
 
-mongoose.connect(process.env.MONGODB_URI,{
-  useUnifiedTopology:true,
-  useNewUrlParser:true});
+ mongoose.connect(process.env.MONGODB_URI,{
+   useUnifiedTopology:true,
+   useNewUrlParser:true,
+   useCreateIndex:true,
+   useFindAndModify:false});
 
   const app = express();
 
