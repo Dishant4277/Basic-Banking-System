@@ -159,7 +159,7 @@ const Transaction = new mongoose.model("transaction",transactionSchema)
         Customer.insertMany(defaultCustomers);
         res.redirect("/allcust");}else{
         res.render("allcust",{allcustomers:foundCustomers})}
-    })
+    }).catch(error => { console.log(error);})
   })
 
   app.post("/transact",function(req,res){
@@ -182,7 +182,7 @@ const Transaction = new mongoose.model("transaction",transactionSchema)
             result.balance=newRBalance;
             result.save();
           }
-        })
+        }).catch(error => { console.log(error);})
          const newSBalance=result.balance-req.body.amount;
         result.balance=newSBalance;
         result.save();
@@ -200,7 +200,7 @@ const Transaction = new mongoose.model("transaction",transactionSchema)
         console.log("error");
         res.render("failure");
       }
-    })
+    }).catch(error => { console.log(error);})
   })
 
   app.listen(process.env.PORT || 3000,function(){
