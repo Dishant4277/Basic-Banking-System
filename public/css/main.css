@@ -1,0 +1,686 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+h1
+{color: red;
+}
+
+#button {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 100;
+}
+.mybtn
+{
+    margin: 0 auto; align-items: center; justify-items: center; padding-bottom: 40px; padding-top: 20px;
+    padding-left: 50%;
+}
+/*Navbar section*/
+.navbar1
+{
+    background-color:lightblue;
+    font-weight: bold;
+
+
+
+}
+.navbar1 .nav-item:hover{
+    transition: 0.3s;
+    font-size: 20px;
+}
+.logo{
+    height: 60px;
+    width: 80px;
+    border-radius: 100%;
+    /*box-shadow: 10px 10px;*/
+    box-shadow: 10px 10px 5px black;
+
+}
+.sliding
+{
+    background-color:black;
+    height: 500px;
+}
+.sliding .container-fluid img{
+    height: 500px;
+
+
+
+}
+.sliding .container-fluid h1{
+    font-size: 5rem;
+    color: white;
+
+}
+.sliding .container-fluid p{
+    font-size: 3rem;
+        background-color: white;
+      background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    }
+    .category .container img{
+        height: 18rem;
+    }
+    .category .container p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .category .container .card-text:hover
+    {
+        font-weight: bold;
+        color: red;
+
+    }
+    .category .b1{
+
+        width: 80px;
+    }
+
+    .category .b1:hover
+    {
+        color:white;
+        background-color:red;
+        border-radius: 6px;
+        transition: 0.3s;
+        width: 70px;
+        height: 30px;
+        font-weight: bold;
+    }
+    .card:hover{
+        border: wheat solid 4px;
+      box-shadow: 4px 4px 4px red;
+    }
+    .category .inner,.latest .inner{
+        overflow: hidden;
+
+    }
+    .category .inner img{
+        transition: all 1.5s ease;
+    }
+    .box-shadow
+    {
+
+        box-shadow: 10px 10px 5px grey;
+    }
+
+
+
+    .footer,.feature,.category
+    {
+      background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );}
+    .ft
+    {
+    border-radius: 10px;
+
+    }
+    .footer li{
+        color: white;
+    }
+    .footer img{
+        box-shadow: 4px 4px grey;
+        width:300px;
+         height:300px;
+    }
+    *
+    {
+        scroll-behavior: smooth;
+    }
+    .backtop
+    {
+        float: right;
+    }
+    .bc{
+        height: 20rem;
+        background-image: url("/images/c2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+    .ac{
+        height: 30rem;
+        background-image: url("/images/about.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    .cc{
+        height: 30rem;
+        background-image: url("/images/mission.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    .cs{
+        height: 30rem;
+        background-image: url("/images/c2.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    .hc{
+        height: 35rem;
+        background-image: url("/images/contact2.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    .bc .bg-pink
+    {
+        background-color: hotpink;
+    }
+    .pdetails
+    {color: black;
+        padding: 50px;
+        justify-content: flex-start;
+
+    }
+    .chip-list .chip-button
+    {
+        background-color: blanchedalmond;
+        padding: 5px 4px;
+        margin: 8px 16px 0px 0px;
+
+    }
+    .contactform
+    {
+        background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    }
+    .transact
+    {
+        margin-top: 50rem;
+        height: 20rem;
+        width: 50rem;
+        margin: auto;
+        padding: 60px;
+    }
+    .transact input , .tx
+    {
+
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        color: white;
+        background-color:lightgreen;
+        border-bottom: solid black 2px;
+    }
+    .t
+    {
+        margin-top: 5rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 80rem;
+     padding-bottom: 50px;
+     height: 35rem;
+     background-image: url("/images/c1\ \(2\).jpg");
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-attachment: fixed;
+
+
+
+    }
+    .fc
+    {
+        height: 35rem;
+        background-image: url("/images/success.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    .ordercard
+{
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: 70px;
+}
+.ordercard .icon{
+font-size: 10rem;
+color: green;
+margin: 0 auto;
+}
+
+    @media (min-width: 200px) and (max-width:425px)
+    {
+        .mybtn
+        {
+            margin: 0 auto; align-items: center; justify-items: center; padding-bottom: 40px; padding-top: 30px;
+            padding-left: 40%;
+        }
+        .searchresults h5
+        {
+            font-size: 0.9rem;
+        }
+        .searchresults p
+        {
+            font-size: 0.6rem;
+        }
+
+        .sliding
+    {
+        background-color:black;
+        height: 300px;
+    }
+    .sliding .container-fluid img{
+        height: 300px;
+
+
+
+    }
+        .sliding .container-fluid .first1 h1
+        {
+            font-size: 0.5rem;
+            opacity: 0.7;
+            color: white
+        }
+        .sliding .container-fluid .first1 p
+        {
+            font-size: 0.2rem;
+            opacity: 0.7;
+            color: white
+        }
+        .category .section_title h1
+        {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .footer img{
+
+            width:150px;
+             height:150px;
+        }
+        .footer .row h3
+        {
+            font-size: 13px;
+        }
+        .footer .row ul li
+        {
+            font-size: 11px;
+        }
+        .border-top h6
+    {
+        font-size: 9px;
+    }
+    .backtop a
+    {
+    font-size: 10px;
+    }
+    .ft{
+       padding-left: 80px;
+    }
+    .ac h3
+    {
+    font-size: 18px;
+    }
+    .ac h1
+    {
+        font-size: 23px;
+    }
+    .cc h1{
+        font-size: 23px;
+    }
+    .cc p
+    {
+        font-size: 11px;
+    }
+    .ac .btn
+    {
+        font-size: 10px;
+    }
+
+    .hc h3
+    {
+    font-size: 18px;
+    }
+    .hc h1
+    {
+        font-size: 23px;
+    }
+    .hc .btn
+    {
+        font-size: 10px;
+    }
+    .hc .card
+    {
+        height: 7rem;
+        width: 17rem;
+        margin: auto;
+        margin-bottom: 7px;
+    }
+    .hc .inner h5
+    {
+    font-size: 13px;
+    }
+    .hc .inner
+    {
+        font-size: 6px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .hc .inner .card-text{
+        font-size: 9px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .hc{
+        height: 35rem;
+        background-image: url("/images/contact3.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    .contactform .container
+    {
+        margin-top: 200px;
+    }
+    .ac,.cc{
+        height: 26rem;
+    }
+    .cat2 .container .card
+    {
+        height: 23rem;
+    }
+    .cat2 .container .inner
+    {
+        font-size: 22px;
+        margin: 0 auto;
+    }
+    .cat2 .container .card-body p
+    {
+        font-size: 14px;
+    }
+    .cat2 .container .card-text
+    {
+        font-size: 13px;
+    }
+    .category .container .card-text
+    {
+        font-size:18px;
+    }
+    .category .container .card
+    {
+        height: 20rem;
+    }
+    .category .container .card img
+    {
+        height: 14rem;
+    }
+    .pro .card
+    {
+        width: 18rem;
+
+    }
+    .para1 .pdetails p
+    {
+        padding-top: 1.7rem;
+        font-size: 12px;
+    }
+     .gallery1 .section_title  h4
+    {
+
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    .pf .card
+    {
+        width: 18rem;
+        margin: 0 auto;
+    }
+    .pf .inner
+    {
+        font-size: 25px;
+        margin: 0 auto;
+    }
+    .pf .card-text
+    {
+        font-size: 21px;
+    }
+    .pf .card-body
+    {
+        font-size: 13px;
+    }
+    .name
+    {
+        font-size: 1rem;
+    }
+     .gallery1 .carousel-inner .carousel-item img
+    {
+        height: 23rem;
+
+    }
+
+    .para1 .chip-list span
+    {
+        font-size: 10px;
+
+    }
+
+    }
+    @media (min-width: 426px) and (max-width:769px)
+    {
+        .mybtn
+    {
+        margin: 0 auto; align-items: center; justify-items: center; padding-bottom: 40px; padding-top: 30px;
+        padding-left: 45%;
+    }
+        .ac , .cc{
+            height: 27rem;
+        }
+        .category .container img
+        {
+            height: 12rem;
+        }
+        .category .container p{
+            font-size: 1.4rem;
+        }
+
+
+        .sliding .container-fluid img{
+            height: 500px;
+
+        }
+        .sliding .container-fluid .first1 h1
+        {
+            font-size: 1.8rem;
+            opacity: 0.7;
+            color: white
+        }
+        .sliding .container-fluid .first1 p
+        {
+            font-size: 1.6rem;
+            opacity: 0.7;
+            color: white
+        }
+        .sliding .container-fluid .first1 h1
+        {
+            font-size: 2rem;
+            opacity: 0.7;
+            color: white
+        }
+        .sliding .container-fluid .first1 p
+        {
+            font-size: 1.7rem;
+            opacity: 0.7;
+            color: white
+        }
+
+    .footer img{
+
+        width:200px;
+         height:200px;
+    }
+    .footer .row h3
+    {
+        font-size: 16px;
+    }
+    .footer .row ul li
+    {
+        font-size: 12px;
+    }
+    .border-top h6
+    {
+        font-size: 10px;
+    }
+    .backtop a
+    {
+    font-size: 11px;
+    }
+    .ac h3
+    {
+    font-size: 20px;
+    }
+    .ac h1
+    {
+        font-size: 26px;
+    }
+    .cc h1{
+        font-size: 26px;
+    }
+    .cc p
+    {
+        font-size: 13px;
+    }
+    .ac .btn
+    {
+        font-size: 12px;
+    }
+
+    .category .container .card-text
+    {
+        font-size:20px;
+    }
+    .category .container .card
+    {
+        height: 21rem;
+    }
+
+    .name
+    {
+        font-size: 1rem;
+    }
+    .pro .card  .btn
+    {
+        margin-bottom: 9rem;
+    }
+    .pro .inner
+    {
+        height: 18rem;
+    }
+    .para1 .pdetails p
+    {
+        padding-top: 1.9rem;
+        font-size: 12px;
+    }
+     .gallery1 .section_title  h4
+    {
+
+        font-size: 1.7rem;
+        margin-left: 10rem;
+    }
+
+     .gallery1 .carousel-inner .carousel-item img
+    {
+        height: 25rem;
+
+    }
+
+    .para1 .chip-list span
+    {
+        font-size: 12px;
+
+    }
+
+
+    }
+    @media (min-width: 769px) and (max-width:1024px)
+    {
+        .name
+        {
+            font-size: 1rem;
+        }
+        .pro .card
+        {
+            height: 22rem;
+        }
+
+
+       .card-body p {
+           font-size: 12px;
+
+       }
+
+       .category .container .card-text
+       {
+           font-size:20px;
+       }
+       .category .container .card
+       {
+           height: 25rem;
+       }
+
+
+       .para1 .pdetails p
+    {
+        padding-top: 1.7rem;
+        font-size: 12px;
+    }
+     .gallery1 .section_title  h4
+    {
+
+        font-size: 2rem;
+        margin-left: 20rem;
+    }
+    .latest .card
+    {
+        height: 22rem;
+    }
+    }
+    @media (min-width: 1025px) and (max-width:1441px)
+    {
+        .para1 .pdetails p
+    {
+        padding-top: 3rem;
+    }
+     .gallery1 .section_title  h4
+    {
+
+        font-size: 2rem;
+        margin-left: 30rem;
+    }
+    }
+
+    @media (min-width: 769px) and (max-width:1441px)
+    {
+    .sliding .container-fluid .first1 h1
+    {
+        font-size: 5rem;
+        opacity: 0.7;
+        color: white
+    }
+    .sliding .container-fluid .first1 p
+    {
+        font-size: 3rem;
+        opacity: 0.7;
+        color: white
+    }
+    .cat2 .container .card-body p
+    {
+        font-size: 12px;
+    }
+    .cat2 .container .card-text
+    {
+        font-size: 19px;
+    }
+
+
+    }

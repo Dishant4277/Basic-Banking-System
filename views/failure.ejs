@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+<body class="fc">
+
+    <%- include("partials/navbar"); -%>
+
+    <div class="container fc">
+        <div class="ordercard">
+    <div class="card" style="width: 58rem;">
+        <i class="fas fa-check-circle icon"></i>
+        <div class="card-body text-center">
+            <div class="main">
+                <h1>Transaction Failed!!</h1>
+                <h6>(Possible Reasons : Inappropriate Sender's or Recipient's names,Wrong Account Numbers,Insufficient Balance in Sender's Account)</h6>
+            </div>
+            <div class="text-center pb-2">
+                <a href="/transact" class="btn btn-primary">
+                <i class="fa fa-check mr-2"></i>Transact Again
+                </a>
+                </div> </div>
+      </div>
+    </div>
+    </div>
+<%- include("partials/footer"); -%>

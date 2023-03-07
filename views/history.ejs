@@ -1,0 +1,63 @@
+<%- include("partials/header"); -%>
+<body class="fac">
+  <%- include("partials/navbar"); -%>
+<center style="margin-top:5rem;">
+ <h2>Transation History</h2>
+</center>
+<style>
+.fac
+    {
+        height: 25rem;
+        background-image: url("/images/view.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    table
+    {
+      border:black solid 2px;
+    }
+    </style>
+ <div class="container "  style="padding:0px;">
+ <div class="col-lg-12"  style="padding:0px;">
+ <br><br>
+ <h1 class="text-warning text-center"  >  </h1>
+ <br>
+ <table  id="tabledata" class=" table table-striped table-hover table-bordered cs" >
+
+ <tr class="bg-dark text-white text-center" >
+
+ <th>Transaction ID</th>
+ <th>Sender's name </th>
+ <th>Recipient's Name </th>
+ <th>Sender's Account Number</th>
+ <th>Recipient's Account Number</th>
+ <th>Transacted Amount</th>
+ <th>Message</th>
+
+ </tr >
+ <% allTransactions.forEach(function(transaction){%>
+ <tr class="bg-dark text-white text-center" >
+  <td><%=transaction._id%></td>
+  <td><%=transaction.sName%></td>
+  <td><%=transaction.rName%></td>
+  <td><%=transaction.sAccount%></td>
+  <td><%=transaction.rAccount%></td>
+  <td><%=transaction.tAmount%></td>
+  <td><%=transaction.message%></td>
+ </tr>
+
+ <%  }) %>
+</table>
+</div>
+</div>
+<br>
+
+<div class="text-center pb-2">
+               <a href="/allcust" class="btn btn-primary">
+               <i class="fa fa-check mr-2"></i>Check Balance
+               </a>
+               </div>
+               <br>
+
+               <%- include("partials/footer"); -%>

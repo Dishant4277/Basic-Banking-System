@@ -1,0 +1,172 @@
+<%- include("partials/header"); -%>
+
+<style>
+    .cs{
+        height: 30rem;
+        background-image: url("/images/f2.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+
+</style>
+<body class="bg cs">
+  <%- include("partials/navbar"); -%>
+
+
+
+    <div class="t" >
+        <form class="transact" id="form" action="/transact" form method="POST">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" name="senderName" placeholder="Sender's Name" id="sname">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Recipient's Name" name="recipientName" id="rname">
+                </div>
+
+            </div>
+            <div class="form-row">
+            <div class="col">
+                    <input type="text" class="form-control" placeholder="Sender's Account Number" name="senderAccountNum" id="sacc">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Ricipients Account Number"  name="recipientAccountNum" id="racc">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Amount" id="amt" name="amount" required >
+                </div>
+
+            </div>
+            <div class="form-row pl-2 tx">
+                <div class="col pl-2">
+                    <textarea type="text" class="form-control pl-2 " placeholder="Message" name="msg" rows="3" id="msg"></textarea>
+                </div>
+            </div>
+            <div class="container mybtn">
+         <a href="/success"><button class="btn btn-primary text-dark" type="submit"  value="Transaction" name="Transact"class= "form control">Transact</button></a>
+
+</div>
+
+        </form>
+
+    </div>
+
+
+
+<%- include("partials/footer"); -%>
+
+
+<script>
+
+    //form validation with javascript
+    function formValidation() {
+        //Get Value
+        var sname = document.getElementById('sname').value.trim();
+        var rname = document.getElementById('rname').value.trim();
+        var sacc = document.getElementById('sacc').value.trim();
+        var racc = document.getElementById('racc').value.trim();
+        var msg = document.getElementById('msg').value.trim();
+        var amt = document.getElementById('amt').value.trim();
+
+        var isValidForm = true;
+
+        //Validation Conditions here
+        if (sname.length < 1) {
+            alert(" your Name is Required!");
+            var isValidForm = false;
+        }
+        else if (rname.length < 1) {
+            alert("Recipients name is Required!");
+            var isValidForm = false;
+        }
+        else if (msg.length < 1) {
+            alert("Message is Required!");
+            var isValidForm = false;
+        }
+        else if (racc.length < 1) {
+            alert("Recipients Account number  is Required!");
+            var isValidForm = false;
+        }
+        else if (sacc.length < 1) {
+            alert("Sender's Account number is Required!");
+            var isValidForm = false;
+        }
+        else if (amt.value < 1) {
+            alert("Amount  is Required!");
+            var isValidForm = false;
+        }
+        else {
+            isValidForm = true;
+        }
+
+        return isValidForm;  //if isValidForm is true then form submits else submission is stopped
+
+    }
+
+
+
+    $(document).ready(function () {
+
+        $('#form').submit(function (e) {
+
+            //Get Value
+
+            var sname = $('#sname').val().trim();
+            var rname = $('#rname').val().trim();
+            var sacc = $('#sacc').val().trim();
+            var racc = $('#racc').val().trim();
+            var msg = $('#msg').val().trim();
+            var amt = $('#amt').val().trim();
+
+            //reset the errors
+            $(".error").remove();
+
+            var isValidForm = true;
+
+
+
+            if (sname.length < 1) {
+                $('#sname').after(alert('please enter your name'));
+                var isValidForm = false;
+            }
+
+            if (rname.length < 1) {
+                $('#rname').after(alert('please mention Recipients name'));
+                var isValidForm = false;
+            }
+            if (sacc.length < 1) {
+                $('#sacc').after(alert('please enter your Account Number'));
+                var isValidForm = false;
+            }
+
+            if (racc.length < 1) {
+                $('#racc').after(alert('please mention Recipients Account Number'));
+                var isValidForm = false;
+            }
+
+            if (msg.length < 1) {
+                $('#msg').after(alert('please mention Important note for Reciever'));
+                var isValidForm = false;
+            }
+            if (amt.value < 1) {
+                $('#amt').after(alert('please Enter amount to debit'));
+                var isValidForm = false;
+            }
+            if (isNaN(amt) || amt < 1 ) {
+                alert("Input not valid");
+            }
+
+
+
+
+            return isValidForm;  //if isValidForm is true then form submits else submission is stopped
+
+        });
+
+    });
+
+</script>
