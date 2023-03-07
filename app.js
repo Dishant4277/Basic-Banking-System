@@ -10,9 +10,7 @@ mongoose.set('strictQuery', true);
 
  mongoose.connect(process.env.MONGODB_URI,{
    useUnifiedTopology:true,
-   useNewUrlParser:true,
-   useCreateIndex:true,
-   useFindAndModify:false});
+   useNewUrlParser:true});
 
   const app = express();
 
