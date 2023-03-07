@@ -150,7 +150,7 @@ const Transaction = new mongoose.model("transaction",transactionSchema)
   app.get("/history",function(req,res){
     Transaction.find({}).then(function(foundTransactions){
       res.render("history",{allTransactions:foundTransactions})
-    })
+    }).catch(error => { console.log(error);})
   })
 
   app.get("/allcust",function(req,res){
