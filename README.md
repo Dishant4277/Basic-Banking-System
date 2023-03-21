@@ -1,1 +1,1 @@
-# Banking-Application
+# Basic Banking System
