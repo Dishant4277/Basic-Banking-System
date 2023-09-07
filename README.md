@@ -1,2 +1,2 @@
 # Basic Banking System
-(/Sociopedia - Brave 08-09-2023 00_45_09.png)
+![.md](/Sociopedia - Brave 08-09-2023 00_45_09.png)
