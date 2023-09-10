@@ -203,6 +203,6 @@ const Transaction = new mongoose.model("transaction",transactionSchema)
     }).catch(error => { console.log(error);})
   })
 
-  app.listen(process.env.PORT || 3000,function(){
+  app.listen(process.env.PORT,function(){
     console.log("Server started at port 3000");
   })
